@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Get the certificate ID from the URL query parameter
   const urlParams = new URLSearchParams(window.location.search);
-  const defaultCertificateId = urlParams.get('certificateId') || "ivcw20241550";
+  const defaultCertificateId = urlParams.get('certificateId') || "";
 
   // Set the certificate ID in the input field
   certificateIdInput.value = defaultCertificateId;
@@ -19,28 +19,46 @@ form.addEventListener("submit", function (event) {
   const certificateId = form.elements.certificateId.value;
 
   // Verify the certificate here using else if
-  if (certificateId === "ivwd20241549") {
+  if (certificateId === "IVWD2024011543") {
     const studentData = {
       "Student Name": "MD Akram",
       "Domain": "Web Development",
       "Duration": "8 weeks",
-      "Certification No": "ivwd20241549",
-      "Starting Date": "05/Jan/2024",
-      "Award Date": "01/Mar/2024"
-    };
-    displayStudentData(studentData);
-  } else if (certificateId === "ivcw20241550") {
-    const studentData = {
-      "Student Name": "Uttam Kumar",
-      "Domain": "Content Writing",
-      "Duration": "8 weeks",
-      "Certification No": "ivcw20241550",
+      "Certification No": "IVWD2024011543",
       "Starting Date": "01/Jan/2024",
       "Award Date": "29/Feb/2024"
     };
     displayStudentData(studentData);
-  } else if (certificateId === "") {
-    // Add data for another certificate ID
+  } else if (certificateId === "IVWD2023021219") {
+    const studentData = {
+      "Student Name": "Ajeet Kumar",
+      "Domain": "Web Development",
+      "Duration": "6 weeks",
+      "Certification No": "IVWD2023021219",
+      "Starting Date": "10/Feb/2023",
+      "Award Date": "25/Mar/2023"
+    };
+    displayStudentData(studentData);
+  } else if (certificateId === "IVWD2023021219") {
+    const studentData = {
+      "Student Name": "Sonu Singh",
+      "Domain": "Web Development",
+      "Duration": "4 weeks",
+      "Certification No": "IVWD2023021219",
+      "Starting Date": "10/Feb/2023",
+      "Award Date": "10/Mar/2023"
+    };
+    displayStudentData(studentData);
+  } else if (certificateId === "IVWD2023021220") {
+    const studentData = {
+      "Student Name": "Rahul Kumar",
+      "Domain": "Web Development",
+      "Duration": "6 weeks",
+      "Certification No": "IVWD2023021220",
+      "Starting Date": "10/Feb/2023",
+      "Award Date": "25/Mar/2023"
+    };
+    displayStudentData(studentData);
   } else {
     resultDiv.innerHTML = "<p>Invalid Certificate ID</p>";
   }
