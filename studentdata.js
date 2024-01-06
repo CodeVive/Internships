@@ -29,7 +29,9 @@ form.addEventListener("submit", function (event) {
       "Award Date": "29/Feb/2024"
     };
     displayStudentData(studentData);
-  } else if (certificateId === "IVWD2023021219") {
+  } 
+  
+  else if (certificateId === "IVWD2023021219") {
     const studentData = {
       "Student Name": "Ajeet Kumar",
       "Domain": "Web Development",
@@ -39,17 +41,31 @@ form.addEventListener("submit", function (event) {
       "Award Date": "25/Mar/2023"
     };
     displayStudentData(studentData);
-  } else if (certificateId === "IVWD2023021219") {
+  } 
+  else if (certificateId === "IVWD2023021218") {
+    const studentData = {
+      "Student Name": "Ajay Kumar",
+      "Domain": "Web Development",
+      "Duration": "6 weeks",
+      "Certification No": "IVWD2023021218",
+      "Starting Date": "10/Feb/2023",
+      "Award Date": "25/Mar/2023"
+    };
+    displayStudentData(studentData);
+  } 
+  else if (certificateId === "IVWD2023021221") {
     const studentData = {
       "Student Name": "Sonu Singh",
       "Domain": "Web Development",
       "Duration": "4 weeks",
-      "Certification No": "IVWD2023021219",
+      "Certification No": "IVWD2023021221",
       "Starting Date": "10/Feb/2023",
       "Award Date": "10/Mar/2023"
     };
     displayStudentData(studentData);
-  } else if (certificateId === "IVWD2023021220") {
+  } 
+  
+  else if (certificateId === "IVWD2023021220") {
     const studentData = {
       "Student Name": "Rahul Kumar",
       "Domain": "Web Development",
@@ -59,7 +75,19 @@ form.addEventListener("submit", function (event) {
       "Award Date": "25/Mar/2023"
     };
     displayStudentData(studentData);
-  } else {
+  } 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  else {
     resultDiv.innerHTML = "<p>Invalid Certificate ID</p>";
   }
 });
